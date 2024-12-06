@@ -64,3 +64,176 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+# Git Commands for Laravel Project
+
+This document outlines the essential Git commands used for managing a Laravel project. These commands will help you clone, branch, commit, push, and manage your repository efficiently.
+
+## Setting Up the Repository
+
+1. **Clone an Existing Repository**
+   ```bash
+   git clone <repository-url>
+   ```
+   Example:
+   ```bash
+   git clone https://github.com/username/laravel-1.git
+   ```
+
+2. **Navigate to the Project Directory**
+   ```bash
+   cd laravel-1
+   ```
+
+3. **Initialize a New Git Repository**
+   ```bash
+   git init
+   ```
+
+## Branch Management
+
+1. **Create a New Branch**
+   ```bash
+   git branch <branch-name>
+   ```
+   Example:
+   ```bash
+   git branch kalani-devv
+   ```
+
+2. **Switch to a Branch**
+   ```bash
+   git checkout <branch-name>
+   ```
+   Example:
+   ```bash
+   git checkout kalani-devv
+   ```
+
+3. **Create and Switch to a New Branch**
+   ```bash
+   git checkout -b <branch-name>
+   ```
+   Example:
+   ```bash
+   git checkout -b kalani-devv
+   ```
+
+4. **List All Branches**
+   ```bash
+   git branch
+   ```
+
+5. **Delete a Branch**
+   ```bash
+   git branch -d <branch-name>
+   ```
+
+## Staging and Committing Changes
+
+1. **Check the Status of Your Repository**
+   ```bash
+   git status
+   ```
+
+2. **Stage Changes**
+   ```bash
+   git add <file-name>
+   ```
+   To stage all changes:
+   ```bash
+   git add .
+   ```
+
+3. **Commit Changes**
+   ```bash
+   git commit -m "Commit message"
+   ```
+   Example:
+   ```bash
+   git commit -m "Added user authentication feature"
+   ```
+
+## Pushing and Pulling Changes
+
+1. **Push Changes to a Remote Repository**
+   ```bash
+   git push origin <branch-name>
+   ```
+   Example:
+   ```bash
+   git push origin kalani-devv
+   ```
+
+2. **Pull Changes from a Remote Repository**
+   ```bash
+   git pull origin <branch-name>
+   ```
+
+## Merging and Resolving Conflicts
+
+1. **Merge a Branch into the Current Branch**
+   ```bash
+   git merge <branch-name>
+   ```
+   Example:
+   ```bash
+   git merge main
+   ```
+
+2. **Resolve Merge Conflicts**
+   - Open the conflicting files and manually resolve the conflicts.
+   - Stage the resolved files:
+     ```bash
+     git add <file-name>
+     ```
+   - Commit the merge:
+     ```bash
+     git commit -m "Resolved merge conflicts"
+     ```
+
+## Viewing Logs and History
+
+1. **View Commit History**
+   ```bash
+   git log
+   ```
+   For a compact view:
+   ```bash
+   git log --oneline
+   ```
+
+2. **Show Changes Made to Files**
+   ```bash
+   git diff
+   ```
+
+## Miscellaneous Commands
+
+1. **Discard Changes**
+   ```bash
+   git checkout -- <file-name>
+   ```
+
+2. **Remove Files from Staging Area**
+   ```bash
+   git reset <file-name>
+   ```
+
+3. **Remove the Last Commit (Soft Reset)**
+   ```bash
+   git reset --soft HEAD~1
+   ```
+
+4. **Remove the Last Commit (Hard Reset)**
+   ```bash
+   git reset --hard HEAD~1
+   ```
+
+## Notes
+- Ensure you commit frequently with meaningful commit messages.
+- Always pull changes before starting new work to avoid merge conflicts.
+- Use branches effectively to separate features and bug fixes from the main development line.
+
+
