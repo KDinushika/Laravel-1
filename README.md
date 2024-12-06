@@ -231,9 +231,5 @@ This document outlines the essential Git commands used for managing a Laravel pr
    git reset --hard HEAD~1
    ```
 
-## Notes
-- Ensure you commit frequently with meaningful commit messages.
-- Always pull changes before starting new work to avoid merge conflicts.
-- Use branches effectively to separate features and bug fixes from the main development line.
 
 
